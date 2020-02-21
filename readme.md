@@ -1,2 +1,2 @@
-# JeongJunHo.github.io
-�ѱ��׽�Ʈ
+﻿# JeongJunHo.github.io
+한글테스트
