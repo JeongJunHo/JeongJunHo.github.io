@@ -4781,7 +4781,7 @@ a.close.disabled {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
@@ -9738,7 +9738,7 @@ textarea.form-control {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
+  /* width: 80%; */
   max-width: 100%;
 }
 
