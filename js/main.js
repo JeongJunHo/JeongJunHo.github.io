@@ -293,7 +293,7 @@ var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
+  this.period = parseInt(period, 10) || 1000;
   this.txt = '';
   this.tick();
   this.isDeleting = false;
@@ -438,5 +438,23 @@ $(function() {
 
   }
 
-});
+  $(".more-btn").click(function(){
+	  $(this).parent().siblings(".hide-div").toggleClass('hide');
 
+	  if($(this).text() == "more view"){
+		  $(this).text("close view");
+	  }else{
+		$(this).text("more view");
+	  }
+  })
+
+  $('#img-modal').on('show.bs.modal', function (event) {
+	var img = $(event.relatedTarget).siblings('img') // Button that triggered the modal
+	var recipient = img.attr('src') // Extract info from data-* attributes
+	// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+	// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+	var modal = $(this)
+	modal.find('.modal-title').text('New message to ' + recipient)
+	modal.find('.modal-body img').attr('src', recipient)
+  })
+});
