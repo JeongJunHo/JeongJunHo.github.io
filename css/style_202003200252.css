@@ -9829,7 +9829,7 @@ textarea.form-control {
 }
 .snip1273 figcaption:before,
 .snip1273 figcaption:after {
-  width: 1px;
+  width: 5px;
   height: 0;
 }
 .snip1273 figcaption:before {
@@ -9871,13 +9871,13 @@ textarea.form-control {
   content: '';
   background-color: #ffffff;
   z-index: 1;
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
   opacity: 0.8;
 }
 .snip1273:before,
 .snip1273:after {
-  height: 1px;
+  height: 5px;
   width: 0%;
 }
 .snip1273:before {
